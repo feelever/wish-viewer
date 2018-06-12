@@ -43,7 +43,7 @@ def job():
     wish.crawlwish(label_today,"phone+case")
     wish.crawlwish(label_today,"rings")
 def schejob():
-    schedule.every(10).seconds.do(job)
+    schedule.every(1).days.do(job)
     while True:
        schedule.run_pending()
        time.sleep(1)
