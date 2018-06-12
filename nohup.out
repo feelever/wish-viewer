@@ -1,0 +1,89 @@
+start
+0
+46
+96
+145
+195
+/opt/wish-web/static/20180610_baught.json
+ * Serving Flask app "wish-web" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:9561/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 433-429-879
+119.123.77.115 - - [10/Jun/2018 10:32:07] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:32:46] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:32:50] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:33:49] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:33:49] "GET /static/jQuery.js HTTP/1.1" 404 -
+119.123.77.115 - - [10/Jun/2018 10:33:49] "GET /static/echarts.min.js HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:36:44] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:36:45] "GET /static/echarts.min.js HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:36:47] "GET /static/jQuery.js HTTP/1.1" 404 -
+119.123.77.115 - - [10/Jun/2018 10:36:49] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:36:49] "GET /static/jQuery.js HTTP/1.1" 404 -
+119.123.77.115 - - [10/Jun/2018 10:37:04] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:37:04] "GET /static/jQuery.js HTTP/1.1" 404 -
+119.123.77.115 - - [10/Jun/2018 10:38:15] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:38:16] "GET /static/jquery.js HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:38:20] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:38:25] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:38:26] "GET /wish/diff HTTP/1.1" 200 -
+ * Detected change in '/opt/wish-web/wish-web.py', reloading
+start
+0
+46
+96
+145
+195
+/opt/wish-web/static/20180610_baught.json
+76
+152
+228
+304
+380
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 433-429-879
+119.123.77.115 - - [10/Jun/2018 10:42:47] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 10:42:47] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:21:19] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:21:19] "GET /wish/diff HTTP/1.1" 200 -
+start
+0
+46
+96
+145
+195
+/opt/wish-web/static/20180610_baught.json
+ * Serving Flask app "wish-web" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:9561/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 433-429-879
+119.123.77.115 - - [10/Jun/2018 12:38:27] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:38:28] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:38:29] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:38:30] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:38:32] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:38:33] "GET /wish/diff HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:38:39] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:46:55] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:46:55] "GET /wish HTTP/1.1" 200 -
+119.123.77.115 - - [10/Jun/2018 12:46:56] "GET /wish/diff HTTP/1.1" 200 -
+106.186.118.67 - - [10/Jun/2018 16:44:37] "GET /wish/diff?nsukey=t%2FQdySp8mFrM1tU3qu3n2EXQwbcOIcDtv3rAGobljMwgzBeKbMltpOx4tktUSBRa1cVzwtLTZy5v5dJV%2FaNqS0gbSq%2BSomTHOquDhz8SgWiE4J5eFBFuf%2BFq%2FgLJ4p5thFmLr%2B%2FYIpOO8%2B8OdCMFPKCc1b17pYVRbzs0C9nI%2F8d146PM0dc14VhiiieAuDyeIdIwrBxdtUeM7%2BmuJmKeNw%3D%3D HTTP/1.1" 200 -
+119.123.79.133 - - [12/Jun/2018 13:42:00] "GET /wish HTTP/1.1" 200 -
+119.123.79.133 - - [12/Jun/2018 13:42:00] "GET /static/jquery.js HTTP/1.1" 304 -
+119.123.79.133 - - [12/Jun/2018 13:42:03] "GET /static/echarts.min.js HTTP/1.1" 304 -
+119.123.79.133 - - [12/Jun/2018 13:42:03] "GET /wish/diff HTTP/1.1" 200 -
+119.123.79.133 - - [12/Jun/2018 13:44:44] "GET /wish HTTP/1.1" 200 -
+119.123.79.133 - - [12/Jun/2018 13:44:44] "GET /wish/diff HTTP/1.1" 200 -
+119.123.79.133 - - [12/Jun/2018 13:45:25] "GET /wish HTTP/1.1" 200 -
+119.123.79.133 - - [12/Jun/2018 13:45:25] "GET /wish/diff HTTP/1.1" 200 -

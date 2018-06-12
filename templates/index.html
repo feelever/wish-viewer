@@ -1,0 +1,54 @@
+<!doctype html>
+<title>wish数据拉取</title>
+<div id="main" style="width: 100%;height:700px;"></div>
+<script src="{{url_for('static', filename='jquery.js')}}"></script>  
+<script src="{{url_for('static', filename='echarts.min.js')}}"></script>
+<script>
+  $.ajax({
+    url:"/wish/diff",
+    success:function(result){
+        diff=JSON.parse(result)
+        xArray = []
+        yArray1=[]
+        yArray2=[]
+        for (var i=0; i<diff.length;i++){
+          xArray.push(diff[i].id);
+          yArray1.push(diff[i].pre);
+          yArray2.push(diff[i].now);
+        }
+        drawChart(xArray,yArray1,yArray2)
+  }});
+  var drawChart=function(xArray,y1,y2){
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    myChart.on('click', function (param){
+        window.open("https://www.wish.com/#cid="+param.name)
+    });
+    
+    var option = {
+      title: {
+          text: 'wish前两百数据前后二天出现存在变化的信息phone case'
+      },
+      tooltip: {},
+      legend: {
+          data:['销量']
+      },
+      xAxis: {
+          data: xArray
+      },
+      yAxis: {},
+      series: [{
+          name: '昨天',
+          type: 'bar',
+          data: y1
+      },
+      {
+          name: '今天',
+          type: 'bar',
+          data: y2
+      }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+  }
+</script>
