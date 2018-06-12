@@ -48,6 +48,21 @@ def cal_diff(keywords,pre,now):
                                 diff["incr"]= incr
                                 diffs.append(diff)
         return diffs
+def add_keywords(keywords):
+        with open(os.path.join(APP_STATIC+"/keywords.txt"),"a") as f:
+                f.write("\n")
+                f.write(keywords)
+def get_keywords():
+        results=[]
+        with open(os.path.join(APP_STATIC+"/keywords.txt"),"r") as file:
+                while 1:
+                        line = file.readline()
+                        if len(line.replace("\n",""))>0:
+                                results.append(line.replace("\n",""))
+                        if not line:
+                                break
+                        pass
+        return results
 def crawlwish(date,query):
         print("start")
         headers ={"Cookie":"bsid=50d9fabb01ec49faad2e96a63aadf7d6"}

@@ -18,6 +18,14 @@ def hello_world(keywords=None):
     start =time.strftime("%Y%m%d",time.localtime(time.time()-24*60*60))
     end=str(time.strftime("%Y%m%d", time.localtime()))
     return render_template('index.html',keywords=keywords,start=start,end=end)
+@app.route('/wish/add/<keywords>')
+def add(keywords=None):
+    print(keywords)
+    if keywords==None or len(keywords)==None:
+        keywords="phone+case"
+        return "添加失败，字符为空"
+    wish.add_keywords(keywords)
+    return "添加成功"
 @app.route('/wish/diff/<keywords>/<start>/<end>')
 def wish_diff(keywords=None,start=None,end=None):
     result=[]
@@ -40,13 +48,17 @@ def wish_diff(keywords=None,start=None,end=None):
 def job():
     print("start job")
     label_today=str(time.strftime("%Y%m%d", time.localtime()))
-    wish.crawlwish(label_today,"phone+case")
-    wish.crawlwish(label_today,"rings")
+    results=wish.get_keywords()
+    print(results)
+    for i in results:
+        print(i)
+        wish.crawlwish(label_today,i.replace("/\n",""))
 def schejob():
     schedule.every(1).days.do(job)
     while True:
        schedule.run_pending()
        time.sleep(1)
 if __name__ == '__main__':
+    #job()
     _thread.start_new_thread(schejob,())
     app.run(host='0.0.0.0',port="9561",debug=True)

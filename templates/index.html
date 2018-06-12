@@ -1,6 +1,10 @@
 <!doctype html>
 <title>wish数据拉取</title>
 <div style="text-align:center">
+    <input type="text" id ="addKeywords" value=""/>
+    <input type="button" onclick="addKeywords()" value="添加查询词"/>
+</div>
+<div style="text-align:center">
     <input id="start" value="{{start}}">
     <input id="end" value="{{end}}">
     <input id="keywords" value="{{keywords}}">
@@ -11,6 +15,14 @@
 <script src="{{url_for('static', filename='echarts.min.js')}}"></script>
 <script>
   search()
+  function addKeywords(){
+    $.ajax({
+        url:"/wish/add/"+$("#addKeywords").val(),
+        success:function(result){
+            alert(result)
+        }
+    });
+  }
   function search(){
     start = $("#start").val()
     end = $("#end").val()
