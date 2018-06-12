@@ -26,9 +26,9 @@ def get_express(id):
         return result
 def cal_diff(keywords,pre,now):
         diffs=[]
-        pre_date=os.path.join(APP_STATIC+"\\"+keywords, pre)
+        pre_date=os.path.join(APP_STATIC+"/"+keywords, pre)
         #print(pre_date)
-        now_date=os.path.join(APP_STATIC+"\\"+keywords, now)
+        now_date=os.path.join(APP_STATIC+"/"+keywords, now)
         pres=[]
         with open(pre_date,'r') as load_f:
                  pres = json.load(load_f)
