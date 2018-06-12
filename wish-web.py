@@ -17,13 +17,16 @@ def hello_world(keywords=None):
         keywords="phone+case"
     start =time.strftime("%Y%m%d",time.localtime(time.time()-24*60*60))
     end=str(time.strftime("%Y%m%d", time.localtime()))
-    return render_template('index.html',keywords=keywords,start=start,end=end)
+    keywords_list=wish.get_keywords()
+    return render_template('index.html',keywords=keywords,start=start,end=end,keywords_list=keywords_list)
 @app.route('/wish/add/<keywords>')
 def add(keywords=None):
     print(keywords)
     if keywords==None or len(keywords)==None:
         keywords="phone+case"
         return "添加失败，字符为空"
+    if len(wish.get_keywords())>20:
+        return "词数太多，不加了"
     wish.add_keywords(keywords)
     return "添加成功"
 @app.route('/wish/diff/<keywords>/<start>/<end>')
